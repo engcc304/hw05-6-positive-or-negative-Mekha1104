@@ -1,5 +1,5 @@
 /*
-    จงรับค่าจากผู้ใชิ และวิเคราะห์ว่าจำนวนดังกล่าวเป็นจำนวนเต็มบวก หรือจำนวนเต็มลบ
+    จงรับค่าจากผู้ใช้ และวิเคราะห์ว่าจำนวนดังกล่าวเป็นจำนวนเต็มบวก หรือจำนวนเต็มลบ
     
     Test case:
         Input :
@@ -16,3 +16,22 @@
         Negative
 
 */
+#include <stdio.h>
+int main() {
+    
+    int number ;
+    
+    printf(" Input : \n") ;
+    scanf("%d",&number) ;
+
+    if(number > 0) {
+        printf("Positive") ;
+    } else if (number < 0) {
+        printf("Negative") ;
+    } else {
+        printf("Zero") ;
+    }
+
+    return 0 ;
+    
+}
